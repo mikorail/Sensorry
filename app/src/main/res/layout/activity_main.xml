@@ -28,6 +28,62 @@
             android:layout_height="wrap_content"
             android:text="Hello World!"
             />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/sensor_acc"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/sensor_temp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/sensor_hum"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/sensor_gyro"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/sensor_gravity"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/sensor_press"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/sensor_orient"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            />
 
     </LinearLayout>
 
