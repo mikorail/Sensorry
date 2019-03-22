@@ -37,15 +37,15 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         setContentView(R.layout.activity_main);
 
         sensorManager=(SensorManager)getSystemService(Context.SENSOR_SERVICE);
-        List<Sensor> sensorList=sensorManager.getSensorList(Sensor.TYPE_ALL);
-
-        StringBuilder sensoTtext =  new StringBuilder();
-        for(Sensor sensor:sensorList){
-            sensoTtext.append(sensor.getName())
-                    .append(System.getProperty("line.separator"));
-        }
-        TextView sensorTextView=(TextView)findViewById(R.id.sensor_list);
-        sensorTextView.setText(sensoTtext);
+//        List<Sensor> sensorList=sensorManager.getSensorList(Sensor.TYPE_ALL);
+//
+//        StringBuilder sensoTtext =  new StringBuilder();
+//        for(Sensor sensor:sensorList){
+//            sensoTtext.append(sensor.getName())
+//                    .append(System.getProperty("line.separator"));
+//        }
+//        TextView sensorTextView=(TextView)findViewById(R.id.sensor_list);
+//        sensorTextView.setText(sensoTtext);
 
         txSensorProximity=(TextView)findViewById(R.id.sensor_prox);
         sensorProximity=sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
@@ -130,21 +130,21 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         int sensorType=sensorEvent.sensor.getType();
         float value= sensorEvent.values[0];
         if(sensorType==Sensor.TYPE_PROXIMITY){
-            txSensorProximity.setText("Proximity Sensor :"+value);
+            txSensorProximity.setText("Proximity Sensor :\n"+value);
         }if(sensorType==Sensor.TYPE_ACCELEROMETER){
-            txSensorAccelero.setText("Accelerometer Sensor :"+value);
+            txSensorAccelero.setText("Accelerometer Sensor :\n"+value);
         }if(sensorType==Sensor.TYPE_AMBIENT_TEMPERATURE){
-            txSensorTemp.setText("Temperature Sensor :"+value);
+            txSensorTemp.setText("Temperature Sensor :\n"+value);
         }if(sensorType==Sensor.TYPE_RELATIVE_HUMIDITY){
-            txSensorHum.setText("Humidity Sensor :"+value);
+            txSensorHum.setText("Humidity Sensor :\n"+value);
         }if(sensorType==Sensor.TYPE_GYROSCOPE){
-            txSensorGyro.setText("Gyro Sensor :"+value);
+            txSensorGyro.setText("Gyro Sensor :\n"+value);
         }if(sensorType==Sensor.TYPE_GRAVITY){
-            txSensorGravity.setText("Gravity Sensor :"+value);
+            txSensorGravity.setText("Gravity Sensor :\n"+value);
         }if(sensorType==Sensor.TYPE_PRESSURE){
-            txSensorPressure.setText("Pressure Sensor :"+value);
+            txSensorPressure.setText("Pressure Sensor : \n"+value);
         }if(sensorType==Sensor.TYPE_ORIENTATION){
-            txSensorOrient.setText("Orientation Sensor :"+value);
+            txSensorOrient.setText("Orientation Sensor : \n"+value);
         }
 
     }
